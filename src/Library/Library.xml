@@ -4,32 +4,122 @@
         <name>Library</name>
     </assembly>
     <members>
-        <member name="T:ClassLibrary.Train">
+        <member name="T:Library.CompuertaNot">
             <summary>
-            Esta clase representa un tren muy básico.
+            se crea la clase CompuertaNot que hereda de la clase Compuertas
             </summary>
         </member>
-        <member name="P:ClassLibrary.Train.IsEngineStarted">
+        <member name="M:Library.CompuertaNot.#ctor(System.String)">
             <summary>
-            Obtiene un valor que indica si las maquinas del tren han sido encendidas o no.
+             se crea el constructor de la clase CompuertaNot
             </summary>
-            <value><c>true</c> si las máquinas fueron encendidas, <c>false</c> en caso contrario.</value>
+            <param name="name"></param>
         </member>
-        <member name="M:ClassLibrary.Train.StartEngines">
+        <member name="M:Library.CompuertaNot.result">
             <summary>
-            Enciende las máquinas del tren.
+             se crea el metodo result que calcula el resultado de la compuerta Not
             </summary>
-            <returns>
-            <c>true</c> si las máquinas pueden ser encendidas, <c>false</c> en caso contrario.
-            </returns>
+            <returns></returns>
         </member>
-        <member name="M:ClassLibrary.Train.StopEngines">
+        <member name="T:Library.CompuertaOR">
             <summary>
-            Detiene las máquinas del tren.
+             se crea la clase CompuertaOR que hereda de la clase Compuertas
             </summary>
-            <returns>
-            <c>true</c> si las máquinas pueden ser detenidas, <c>false</c> en caso contrario.
-            </returns>
+        </member>
+        <member name="M:Library.CompuertaOR.#ctor(System.String)">
+            <summary>
+             se crea el constructor de la clase CompuertaOR
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:Library.CompuertaOR.result">
+            <summary>
+             se crea el metodo result que calcula el resultado de la compuerta OR
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Library.Compuertas">
+            <summary>
+            se crea la clase Compuertas que implementa la interfaz IInput
+            </summary>
+        </member>
+        <member name="M:Library.Compuertas.#ctor(System.String)">
+            <summary>
+             se crea el constructor de la clase Compuertas
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="P:Library.Compuertas.Name">
+            <summary>
+            se crea la propiedad Name
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Library.Compuertas.Input">
+            <summary>
+             se crea la propiedad Input
+            </summary>
+            <value></value>
+        </member>
+        <member name="M:Library.Compuertas.AddInput(System.String,Library.IInput)">
+            <summary>
+            se crea el metodo AddInput que agrega una entrada al diccionario
+            </summary>
+        </member>
+        <member name="M:Library.Compuertas.result">
+            <summary>
+             se crea el metodo result que calcula el resultado de la compuerta
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Library.CompuertasAnd">
+            <summary>
+            se crea la clase CompuertasAnd que hereda de la clase Compuertas
+            </summary>
+        </member>
+        <member name="M:Library.CompuertasAnd.#ctor(System.String)">
+            <summary>
+             se crea el constructor de la clase CompuertasAnd
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:Library.CompuertasAnd.result">
+            <summary>
+            se crea el metodo result que calcula el resultado de la compuerta And
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Library.IInput">
+            <summary>
+             se crea la interfaz Iinput
+            </summary>
+        </member>
+        <member name="M:Library.IInput.result">
+            <summary>
+             se crea el metodo result que calcula el resultado de la compuerta
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Library.LogicInput">
+            <summary>
+             se crea la clase LogicInput que implementa la interfaz Iinput
+            </summary>
+        </member>
+        <member name="M:Library.LogicInput.#ctor(System.Int32)">
+            <summary>
+            se crea el constructor de la clase LogicInput
+            </summary>
+        </member>
+        <member name="P:Library.LogicInput.Value">
+            <summary>
+             se crea la propiedad Value
+            </summary>
+            <value></value>
+        </member>
+        <member name="M:Library.LogicInput.result">
+            <summary>
+            se crea el metodo result que calcula el resultado de la compuerta
+            </summary>
         </member>
     </members>
 </doc>
