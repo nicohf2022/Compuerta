@@ -1,7 +1,9 @@
+
 namespace Library;
 /// <summary>
 ///  se crea la clase LogicInput que implementa la interfaz Iinput
 /// </summary>
+
 public class LogicInput : IInput
 {
    
@@ -10,7 +12,7 @@ public class LogicInput : IInput
     /// </summary>
     public LogicInput(int value)
     {
-        this.Value= value;
+        this.Value = value;
     }
     
     /// <summary>

@@ -4,5 +4,25 @@
         <name>LibraryTests</name>
     </assembly>
     <members>
+        <member name="T:LibraryTests.Tests">
+            <summary>
+            se crea la clase Tests.
+            </summary>
+        </member>
+        <member name="M:LibraryTests.Tests.TestAnd">
+            <summary>
+            se crea el metodo TestAnd que prueba la compuerta and y la excepcion que se lanza si no tiene 2 entradas.
+            </summary>
+        </member>
+        <member name="M:LibraryTests.Tests.TestOr">
+            <summary>
+            se crea el metodo TestOr que prueba la compuerta or y la excepcion que se lanza si no tiene 2 entradas.
+            </summary>
+        </member>
+        <member name="M:LibraryTests.Tests.TestNot">
+            <summary>
+            se crea el metodo TestNot que prueba la compuerta not y la excepcion que se lanza si no tiene 1 entrada.
+            </summary>
+        </member>
     </members>
 </doc>

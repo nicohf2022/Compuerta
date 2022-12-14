@@ -6,13 +6,14 @@
     <members>
         <member name="T:program">
             <summary>
-             se crea la clase program
+            se crea la clase program
             </summary>
         </member>
         <member name="M:program.Main(System.String[])">
             <summary>
-             
+            programa principal
             </summary>
+            <param name="args"></param>
         </member>
     </members>
 </doc>

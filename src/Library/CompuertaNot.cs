@@ -1,5 +1,3 @@
-
-
 using System;
 namespace Library;
 /// <summary>
@@ -16,13 +14,18 @@ public class  CompuertaNot:Compuertas
         
         
     }
-    /// <summary>
-    ///  se crea el metodo result que calcula el resultado de la compuerta Not
+     /// <summary>
+    ///  se crea el metodo result que calcula el resultado de la compuerta Not y la excepcion que se lanza si no tiene 1 entrada.
     /// </summary>
     /// <returns></returns>
     public override int result()
     {
         int result = 0;
+        if (Input.Count != 1)
+        {
+            throw new ExeptionCant("La compuerta no tiene 1 entrada");
+        }
+        
         foreach (var e in Input)
         {
             if (e.Value.result() == 1)

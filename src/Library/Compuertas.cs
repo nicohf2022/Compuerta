@@ -15,11 +15,16 @@ public abstract class  Compuertas: IInput
 
 {   
    /// <summary>
-   ///  se crea el constructor de la clase Compuertas
+   ///  se crea el constructor de la clase Compuertas y se lanza la excepcion si el nombre es nulo
    /// </summary>
    /// <param name="name"></param>
     public Compuertas(string name)
     {
+        if (string.IsNullOrEmpty(name))
+        {
+            throw new ArgumentNullException(nameof(name));
+        }
+        
         this.Name = name;
         this.Input = new Dictionary<string, IInput>(); //se crea un diccionario de entradas
 
